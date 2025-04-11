@@ -2,3 +2,5 @@ gradio
 matplotlib
 requests
 vaderSentiment
+pillow
+tradingeconomics

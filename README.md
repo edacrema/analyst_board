@@ -1,4 +1,4 @@
-# Automatic Risk Reporter
+# Analyst Board - Risk Reporter
 
 This application combines news sentiment analysis and armed conflict data to provide a comprehensive risk assessment platform for different countries and regions.
 
@@ -43,14 +43,17 @@ The application currently monitors the following countries/regions:
 ## Installation
 
 1. Clone this repository
-2. Install the required dependencies:
+```bash
+git clone https://github.com/edacrema/analyst_board.git
+cd analyst_board
+```
 
+2. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Set up your environment variables in a `.env` file:
-
 ```
 SERPER_API_KEY=your_serper_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
@@ -63,7 +66,6 @@ ACLED_EMAIL=your_email_for_acled
 ### Web Application
 
 To run the web dashboard:
-
 ```bash
 python app.py
 ```
@@ -73,7 +75,6 @@ The application will be available at `http://localhost:5000`
 ### Command-line Sentiment Analysis
 
 For standalone news sentiment analysis:
-
 ```bash
 python news_sentiment_analyzer.py "Country Name" --limit 10
 ```
@@ -94,3 +95,11 @@ All analysis results are stored in an SQLite database (`sentiment_results.db`) w
 - `articles`: Individual news articles and their sentiment scores
 - `acled_results`: Armed conflict event data and trends
 - `acled_alerts`: Detected anomalies in conflict patterns
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

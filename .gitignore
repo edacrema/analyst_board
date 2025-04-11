@@ -1,20 +1,58 @@
 # Environment variables
 .env
+.env.*
 
 # Virtual environment
 .venv/
+venv/
+ENV/
+env/
 
 # Python cache
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.egg-info/
+.installed.cfg
+*.egg
 
 # Database
 *.db
+*.sqlite
+*.sqlite3
 
 # Local files
 summary_output.txt
+.DS_Store
+*.log
+logs/
+temp/
 
 # IDE specific files
 .idea/
 .vscode/
+*.swp
+*.swo
+.spyderproject
+.spyproject
+.ropeproject
+
+# Distribution / packaging
+dist/
+build/
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
